@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="config.js"></script>
+    <script src="basic.js"></script>
+    <script src="speed.js"></script>
+
+    <title>Демонстрация AES</title>
+</head>
+<body>
+    <div class="main-grid" id="render_message"></div>
+    <div class="main-grid" id="render_key"></div>
+    <form id="speed-form">
+        <p>Скорость: <input type="range" min="-10" max="10" id="speed" value="0" onchange="change_speed()"></p>
+    </form>
+    <p class="round-text" id="round-text">Предобработка Операция AddRoundKey</p>
+
+    <script src="init.js"></script>
+    <script src="encryption.js"></script>
+</body>
+</html>
